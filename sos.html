@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SOS Game-Petros</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/png" href="images/pfp.PNG" />
+	</head>
+	<body class="is-preload">
+	<div style="zoom: 80%;">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="resume.html">Resume</a></li>
+							<li class="active"><a href="projects.html">Projects </a></li>
+							<li><a href="gallery.html">Photo Gallery</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/petros-sklavounos-b2b726231?trk=public_profile_browsemap" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:petros.sklavounos@cooper.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+										</div>
+										
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header >
+									<span class="date">October 21, 2020</span>
+									<h1>CODING PROJECT: SOS GAME</h1>
+									</header>
+								<h3>Project requirements:</h4>
+
+<ul>	
+<li>The game should be split up into multiple files.</li>
+<li>	The game should be compiled using a makefile. The game will be compiled with make.</li>
+	<li>The game should have a game board of 5x5.</li>
+	<li>The number of SOS points should be counted per player.</li>
+<li>	The game ends when the entire board is filled and the winner is declared.</li>
+	<li>One should be able to do a rematch.</li>
+<li>	Give the option for a player to play against the computer.</li>
+	<li>Print the current state of the game after each turn.</li></ul>
+								<h3>Sample of Run:</h3>
+	
+									<pre><code>
+>> Choose your player mode by typing A or B:
+A)Player vs Player
+B)Player vs Computer
+B
+>> You chose Player vs Computer
+>> Now choose the board size by typing A, B:
+A)3x3
+B)5x5
+B
+>> Board is 5X5
+- - - - -
+- - - - -
+- - - - -
+- - - - -
+- - - - -
+>> You are Player 1
+>> Player 1 Score: 0
+>> Computer Score: 0
+
+>> Player 1's Turn
+>> Choose a valid spot by typing a number between 1 and 25:
+4
+>> Capital S or O?
+>> Capital S or O?
+S
+- - - S -
+- - - - -
+- - - - -
+- - - - -
+- - - - -
+>> Player one Score: 0
+>> Player two Score: 0
+>> Computer moves:
+O O O S O
+O O - O -
+- - S S -
+- - - O -
+- - - S -
+>> Player one Score: 2
+>> Player two Score: 0
+
+>> Player 1's Turn
+>> Choose a valid spot by typing a number between 1 and 25:
+1
+>> Choose a valid spot by typing a number between 1 and 25:
+8
+>> Capital S or O?
+>> Capital S or O?
+S
+O O O S O
+O O S O -
+- - S S -
+- - - O -
+- - - S -
+>> Player one Score: 2
+>> Player two Score: 0
+
+O
+O S S O O
+S O O S S
+O O S O O
+O S O S O
+O O S S O
+>> Player one Score: 2
+>> Player two Score: 2
+>> Tie!
+
+>> Would you like to play again?(Y/N)
+Y
+>> Playing Again!
+>> Choose your player mode by typing A or B:
+A)Player vs Player
+B)Player vs Computer
+...and so on 
+</code></pre>
+<h3>Sample run with customizable board size implementation:</h3>
+<code><pre>
+>> Choose your player mode by typing A or B:
+A)Player vs Player
+B)Player vs Computer
+B
+>> You chose Player vs Computer
+>> Now choose the board size by typing A, B:
+A)3x3
+B)5x5
+B
+>> Board is 5X5
+- - - - -
+- - - - -
+- - - - -
+- - - - -
+- - - - -
+>> You are Player 1
+>> Player 1 Score: 0
+>> Computer Score: 0
+...and so on
+OR: 
+>> Choose your player mode by typing A or B:
+A)Player vs Player
+B)Player vs Computer
+A
+>> You chose Player vs Player
+>> Now choose the board size by typing A, B:
+A)3x3
+B)5x5
+A
+>> Board is 3X3
+- - -
+- - -
+- - -
+>> Player 1 Score: 0
+i>> Player 2 Score: 0
+
+>> Player 1's Turn
+>> Choose a valid spot by typing a number between 1 and 9:
+...and so on
+</code></pre>
+								<p> Cygwin was used to create the header files and c files. To execute, first a makefile would be made followed by the running executable command line argument.These files were then commited to the classroom's github organization and into our personal respitories.   </p>
+								<span class="image fit"><img src="images/git.PNG" alt="" /></span>
+								<p>Feel free to reach out for these files if you would like to run them firsthand. </p>
+						
+								</section>
+						</div>
+						
+						
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Petros Sklavounos</li><li>2023</a></li></ul>
+					</div>
+
+			
+		</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

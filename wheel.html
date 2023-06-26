@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<!--
+	massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Wheel of Fortune Game-Petros</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/png" href="images/pfp.PNG" />
+	</head>
+	<body class="is-preload">
+	<div style="zoom: 80%;">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="resume.html">Resume</a></li>
+							<li class="active"><a href="projects.html">Projects</a></li>
+							<li><a href="gallery.html">Photo Gallery</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/petros-sklavounos-b2b726231?trk=public_profile_browsemap" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:petros.sklavounos@cooper.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+										</div>
+										
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header >
+									<span class="date">December 5, 2020</span>
+									<h1>CODING PROJECT: Wheel of fortune GAME</h1>
+									</header>
+								<h3>Project requirements:</h4>
+
+<ul>	
+<li>Allow a user to enter their own puzzle
+<li>Have a used letter board
+<li>Have a wheel that provides a random dollar amount from $500 to $5000.
+<li>Allow 3 players to play and take turns
+<li>Keep track of the 3 players' scores
+<li>Player 1 will start the game. He/she will spin the wheel.
+<li>Player 1 will call a letter and if there is a letter, fill in the blanks, add the letter in the used letter board, and give player 1 the money they landed on times the number of letters in the game. If the letter is not in puzzle, the next player will play.
+<li>For simplicity, all letters can earn money (unlike in the real show, where a vowel costs $250).
+<li>Write an AI (computer player) that plays relatively intelligently.
+<li>Include a bankrupt space and a lose a turn space on the wheel.
+<li>Allow a user to solve the puzzle at any time.
+<li>Allow a user to buy a vowel for $250 and restrict a user from calling a vowel if he/she decided to spin the wheel.</li></ul>
+								<h3>Sample of Run:</h3>
+	
+									<pre><code>
+****** Welcome to Wheel of Fortune! ******
+****************************************** 
+
+player 1
+player 2
+player 3
+
+>>Player 1, choose the puzzle. The genres for today are:  ('Sports', 'Music', 'Characters')
+
+>>What genre puzzle would you like?
+Music
+>>You've used the following letters:
+ []
+>>So far, the word is:
+ ---------
+Player 1 move
+
+
+>>Scoreboard so far is: 
+player #1:$ 0 
+player #2:$ 0 
+player #3:$ 0
+player1 spins...
+5000!
+Player 1 move
+>>Would you like to guess the entire word(W) or letter(L)?
+L
+>>Enter your letter. Remember, a vowel costs $250: s
+
+Yes! S is in the word!
+>>You've used the following letters:
+ ['S']
+>>So far, the word is:
+ --------S
+Player 2 move
+
+
+>>Scoreboard so far is: 
+player #1:$ 5000 
+player #2:$ 0 
+player #3:$ 0
+player2 spins...
+4500!
+Player 2 move
+>>Would you like to guess the entire word(W) or letter(L)?
+l
+>>Enter your letter. Remember, a vowel costs $250: o
+You need money to guess a vowel. Guess a letter instead.
+Enter your guess: n
+
+Sorry, N isn't in the word.
+>>You've used the following letters:
+ ['S', 'N']
+>>So far, the word is:
+ --------S
+Player 3 move
+
+
+>>Scoreboard so far is: 
+player #1:$ 5000 
+player #2:$ 0 
+player #3:$ 0
+player3 spins...
+900!
+Player 3 move
+>>Would you like to guess the entire word(W) or letter(L)?
+l
+>>Enter your letter. Remember, a vowel costs $250: w
+
+Sorry, W isn't in the word.
+>>You've used the following letters:
+ ['S', 'N', 'W']
+>>So far, the word is:
+ --------S
+Player 1 move
+
+
+>>Scoreboard so far is: 
+player #1:$ 5000 
+player #2:$ 0 
+player #3:$ 0
+player1 spins...
+650!
+Player 1 move
+>>Would you like to guess the entire word(W) or letter(L)?
+w
+>>Have a go at it then
+FIREFLies
+
+Calculating....
+YAY!You got the word
+
+You guessed it! Congratulations you won
+
+The word was FIREFLIES
+
+Your cash prize is: $ 5900
+</code></pre>
+								<p> Python IDLE was used to make the game.Executing python files are simple. The file was then commited to the classroom's github organization and into our personal respitories.A screenshot below outlining the bankrupt space, skip a turn and the conditional statements for the winning player. </p>
+								<span class="image fit"><img src="images/wof.PNG" alt="" /></span>
+								<p>Feel free to reach out for these files if you would like to run them firsthand. </p>
+						
+								</section>
+						</div>
+						
+						
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Petros Sklavounos</li><li>2023</a></li></ul>
+					</div>
+
+			
+		</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
